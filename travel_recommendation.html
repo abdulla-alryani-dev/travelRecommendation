@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelBloom</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-logo">
+            <img src="logo.png" alt="Logo">
+            <span class="brand-name">TravelBloom</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="travel_recommendation.html" class="active">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+        <div class="search-container">
+            <div class="search-input-wrapper">
+                <input type="text" id="conditionInput" placeholder="Enter a destination or keyword">
+                <span class="search-icon">🔍</span>
+            </div>
+            <button id="btnSearch" type="button">Search</button>
+            <button id="btnClear" type="button">Clear</button>
+        </div>
+    </nav>
+
+    <header class="hero-section">
+        <div class="social-icons">
+            <a href="#"><img src="https://img.icons8.com/ios-filled/50/ffffff/twitter.png" alt="Twitter"></a>
+            <a href="#"><img src="https://img.icons8.com/ios-filled/50/ffffff/facebook-new.png" alt="Facebook"></a>
+            <a href="#"><img src="https://img.icons8.com/ios-filled/50/ffffff/instagram-new.png" alt="Instagram"></a>
+            <a href="#"><img src="https://img.icons8.com/ios-filled/50/ffffff/youtube-play.png" alt="YouTube"></a>
+        </div>
+
+        <div class="hero-content">
+            <h1>EXPLORE DREAM<br>DESTINATION</h1>
+            <p>
+                The Travel Recommendation App helps users explore popular travel destinations 
+                through an interactive and user-friendly interface. It allows users to search for 
+                beaches, temples, countries, or specific country names to view related cities along 
+                with images and descriptions. The app dynamically fetches data from a structured 
+                JSON file to display relevant results. It provides a simple and efficient way to 
+                discover and plan travel destinations.
+            </p>
+            <button class="book-btn" type="button">Book Now</button>
+        </div>
+
+        <div id="resultsContainer" class="results-grid"></div>
+    </header>
+
+    <script src="travel_recommendation.js" defer></script>
+</body>
+</html>
