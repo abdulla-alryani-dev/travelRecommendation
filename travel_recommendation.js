@@ -57,7 +57,9 @@ function searchRecommendations(keyword) {
     if (keyword.includes("country")) {
         for (const country of travelData.countries || []) {
             results.push(...(country.cities || []));
+          
         }
+        
         return results;
     }
 
@@ -66,6 +68,7 @@ function searchRecommendations(keyword) {
 
         if (country.name.toLowerCase().includes(keyword)) {
             results.push(...(country.cities || []));
+          
             continue;
         }
 
